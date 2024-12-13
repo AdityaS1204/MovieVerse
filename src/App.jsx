@@ -5,8 +5,8 @@ import searchicon from "./search.svg";
 import MovieCard from './MovieCard';
 
 
-// 496673e9
-const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=496673e9";
+
+const API_URL = `${import.meta.env.VITE_API_URL}`;
 
 function App() {
 const [movies,setmovies] = useState([]);
